@@ -1,7 +1,7 @@
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/streamlit/example-app-bug-report/main)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](#)
 
-# 🐞 Bug Report app
+# 🗳️💡 Idébank app
 
-An app to show how Streamlit can easily collect and write data from/to a database (here a simple Google Sheet)
+An app to easily collect and write ideas from the SU Center of Digital Health team from/to a database (here a simple [Google Sheet])
 
-<img width="583" alt="screenshot" src="https://user-images.githubusercontent.com/7164864/141757795-45576b0b-7322-4ef1-b2cc-32a8f108eb7f.png">
+<img width="583" alt="screenshot" src="#">
