@@ -1,7 +1,13 @@
 import streamlit as st
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
+from gsheetsdb import connect
 import pandas as pd
+
+# Everything is accessible via the st.secrets dict:
+st.write("DB username:", st.secrets["db_username"])
+st.write("DB password:", st.secrets["db_password"])
+
 
 SCOPE = "https://www.googleapis.com/auth/spreadsheets"
 SPREADSHEET_ID = "1coKcUQWYzuO6gvKIjIpLO_6JbNz33kJpIP0daWIL2AI"
@@ -9,7 +15,7 @@ SHEET_NAME = "Idebank"
 GSHEET_URL = f"https://docs.google.com/spreadsheets/d/{SPREADSHEET_ID}"
 
 
-@st.experimental_singleton()
+#@st.experimental_singleton()
 def connect_to_gsheet():
     # Create a connection object.
     credentials = service_account.Credentials.from_service_account_info(
@@ -51,7 +57,7 @@ def add_row_to_gsheet(gsheet_connector, row) -> None:
     )
 
 
-st.set_page_config(page_title="Idébank", page_icon="💡", layout="centered")
+#st.set_page_config(page_title="Idébank", page_icon="💡", layout="centered")
 
 st.title("🗳️💡 Idébank")
 
